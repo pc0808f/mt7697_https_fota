@@ -1,0 +1,1 @@
+# mt7697_https_fota
