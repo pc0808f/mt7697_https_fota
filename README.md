@@ -17,6 +17,7 @@
 + [I: fota_dl_api : fota_download_by_https : 179 ][FOTA DL] server_cert_len=1373.  
 ```
 我去計算了一下，應該是我的才對喔，請檢查一下你們的程式
+大小應該是URL "37"   和  CERT LEN "1373"
 ***
 ### 2 svr_cert varification
 ![svr_cert varification](results-img/2%20svr_cert%20varification.png "svr_cert varification")
