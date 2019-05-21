@@ -1,5 +1,39 @@
 # mt7697_https_fota
 
+***
+2019/05/21 Sam's Test vs  philio's result~~~
+
+### 1 First program start
+
+![First program start](results-img/1%20program%20start.png "First program start")
+
+```diff
+- **在這邊有個嚴重的問題**
+- 你們的程式說
+- [I: fota_dl_api : fota_download_by_https : 158 ][FOTA DL] url length: 76
+- [I: fota_dl_api : fota_download_by_https : 179 ][FOTA DL] server_cert_len=1717.
+  但我的程式說
++ [I: fota_dl_api : fota_download_by_https : 158 ][FOTA DL] url length: 37
++ [I: fota_dl_api : fota_download_by_https : 179 ][FOTA DL] server_cert_len=1373.  
+```
+我去計算了一下，應該是我的才對喔，請檢查一下你們的程式
+***
+### 2 svr_cert varification
+![svr_cert varification](results-img/2%20svr_cert%20varification.png "svr_cert varification")
+
+這邊可以看到使用SSL連線成功了
+***
+### 3 download successful
+![download successful](results-img/3%20download%20successful.png "download successful")
+
+這邊可以看到下載成功
+***
+### 4 successful
+![Total successful](results-img/4%20successful.png "Total successful")
+
+最後程式回傳成功的結果
+
+***
 ### feature.mk
 
 Please add following feature
