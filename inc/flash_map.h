@@ -42,6 +42,7 @@
 #define EXTBL_IMAGE_LENGTH      0x8000        /*  32KB */
 #define ORI_IMAGE_LENGTH        0xC1000       /* 772KB */
 #define FOTA_IMAGE_LENGTH       0xC1000       /* 772KB */
+#define FOTA_LENGTH             0xC1000       /* 772KB */
 #define NVDM_LENGTH             0x10000       /*  64KB */
 
 #define LOADER_BASE             0x0
@@ -51,6 +52,7 @@
 #define EXTBL_IMAGE_BASE        (CM4_CODE_BASE   + CM4_CODE_LENGTH)
 #define ORI_IMAGE_BASE          (EXTBL_IMAGE_BASE+ EXTBL_IMAGE_LENGTH)
 #define FOTA_IMAGE_BASE         (ORI_IMAGE_BASE  + ORI_IMAGE_LENGTH)
+#define FOTA_BASE               FOTA_IMAGE_BASE       /* 772KB */
 #define NVDM_BASE               (FOTA_IMAGE_BASE + FOTA_IMAGE_LENGTH)
 
 #define FLASH_BASE		        0x10000000

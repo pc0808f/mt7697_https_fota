@@ -1,5 +1,13 @@
 # mt7697_https_fota
 
+2019/05/26  next step 
+1.test new partition fota download and run fota process
+2.modify mt7697_flash.ld
+3.write a dummy ext bootloader
+4.test the dummy ext bootloader and main code cooperation
+
+
+
 ***
 2019/05/21 Sam's Test vs  philio's result~~~
 
